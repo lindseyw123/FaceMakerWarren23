@@ -55,13 +55,10 @@ public class MainActivity extends AppCompatActivity {
 
         // set seek bars to correct progress
         redSeekBar.setProgress(listener.red);
-        redSeekBar.refreshDrawableState();
 
         greenSeekBar.setProgress(listener.green);
-        greenSeekBar.refreshDrawableState();
 
         blueSeekBar.setProgress(listener.blue);
-        blueSeekBar.refreshDrawableState();
 
         // set text views to reflect progress
         TextView redNum = findViewById(R.id.redNum);
