@@ -13,7 +13,7 @@
         android:orientation="vertical">
 
         <com.example.facemakerwarren23.Face
-            android:id="@+id/surfaceView"
+            android:id="@+id/face"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="2" />
@@ -30,38 +30,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:spinnerMode="dropdown" />
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5sp"
-            android:layout_marginRight="5sp"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/hairButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center_vertical"
-                android:text="Hair" />
-
-            <RadioButton
-                android:id="@+id/eyesButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center_vertical"
-                android:text="Eyes" />
-
-            <RadioButton
-                android:id="@+id/skinButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center_vertical"
-                android:text="Skin" />
-        </RadioGroup>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -190,6 +158,39 @@
             </LinearLayout>
 
         </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/hairButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Hair" />
+
+            <RadioButton
+                android:id="@+id/eyesButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Eyes" />
+
+            <RadioButton
+                android:id="@+id/skinButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Skin" />
+        </RadioGroup>
 
         <Button
             android:id="@+id/randomFaceButton"
